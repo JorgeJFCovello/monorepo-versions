@@ -1,5 +1,9 @@
 {
   "name": "monorepo-versions",
+  "workspaces":[
+    "service-1",
+    "service-2"
+  ],
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,5 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@changesets/cli": "^2.26.2"
+  }
 }
