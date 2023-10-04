@@ -8,3 +8,6 @@ myMagicVariable.forEach((item) => {
     if(item%2 === 0)
     console.log(item, 'is Even')
 })
+
+
+console.log('add changes 2')
