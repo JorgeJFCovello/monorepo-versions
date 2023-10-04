@@ -25,6 +25,6 @@
     "url": "https://github.com/JorgeJFCovello/monorepo-versions.git"
   },
   "devDependencies": {
-    "semantic-release": "^undefined"
+    "semantic-release": "^22.0.5"
   }
 }
