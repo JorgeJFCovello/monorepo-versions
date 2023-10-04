@@ -8,11 +8,10 @@
     "semantic-release": "semantic-release"
   },
   "release": {
-    "branches": ["main", "master", "semantic-release"]
+    "branches": ["semantic-release"]
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
-    "tag": "latest",
     "access": "public"
   },
   "author": "",
