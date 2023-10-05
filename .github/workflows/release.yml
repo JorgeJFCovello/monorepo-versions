@@ -26,7 +26,7 @@ jobs:
         shell: bash
         run: |
             cd org
-            npx nx run affected --base=semver --target=version
+            npx nx affected --base=semver --target=version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Tag last-release
