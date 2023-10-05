@@ -21,18 +21,15 @@ jobs:
           git config user.name "GitHub Bot"
           git config user.email "gituser@example.com"
       - run: |
-            cd org
             yarn install --frozen-lockfile
       - name: Version
         shell: bash
         run: |
-            cd org
             npx nx affected --base=last-release --target=version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Tag last-release
         shell: bash
         run: |
-          cd org
           git tag -f last-release
           git push origin last-release --force
