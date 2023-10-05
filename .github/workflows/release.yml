@@ -25,6 +25,7 @@ jobs:
       - name: Version
         shell: bash
         run: |
+            cd org
             npx nx affected --base=last-release --target=version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
